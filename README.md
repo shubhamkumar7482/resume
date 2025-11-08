@@ -46,5 +46,5 @@ The website is fully **responsive**, visually clean, and optimized for both desk
 
 ---
 
-## 📂 Project Structure
+
 
