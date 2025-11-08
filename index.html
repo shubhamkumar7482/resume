@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Kumar Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="sidebar background_added">
+        <div class="icon" onclick="showSection('main')">
+            <img src="assets/images/icon/house-solid-full.svg" alt="Home Icon" width="24" height="24">
+
+            <span>
+                <div class="upperside_arrow"><img src="assets/images/caret-up-fill.svg" alt=""></div>
+                Home
+            </span>
+        </div>
+        <div class="icon" onclick="showSection('about')">
+            <img src="assets/images/icon/user-solid-full.svg" alt="aobut Icon" width="24" height="24">
+            <span>
+                <div class="upperside_arrow"><img src="assets/images/caret-up-fill.svg" alt=""></div>
+                About
+            </span>
+        </div>
+        <div class="icon" onclick="showSection('skills')">
+            <img src="assets/images/icon/laptop-code-solid-full.svg" alt="skills Icon" width="24" height="24">
+            <span>
+                <div class="upperside_arrow"><img src="assets/images/caret-up-fill.svg" alt=""></div>
+                Skills
+            </span>
+        </div>
+        <div class="icon" onclick="showSection('experience')">
+            <img src="assets/images/icon/briefcase-solid-full.svg" alt="Experience Icon" width="24" height="24">
+            <span>
+                <div class="upperside_arrow1"><img src="assets/images/caret-up-fill.svg" alt=""></div>
+                Experience
+            </span>
+        </div>
+        <div class="icon" onclick="showSection('contact')">
+            <img src="assets/images/icon/envelope-solid-full.svg" alt="contact Icon" fill="white" width="24"
+                height="24">
+            <span>
+                <div class="upperside_arrow"><img src="assets/images/caret-up-fill.svg" alt=""></div>
+                Contact
+            </span>
+        </div>
+    </div>
+    <div class="home-section">
+        <div class="main-section" id="main">
+            <div class="row">
+                <div class="col-6 col-lg-4 mx-auto col_responsive">
+                    <div class="profile-img-container">
+                        <img src="assets/images/shubham-image.png" alt="Steve Milner" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 col-lg-7 mx-auto laptop_responsive">
+                    <div class="info home-content">
+                        <h2><span>👋Hi, I'm Shubham Kumar</span></h2>
+                        <div class="text-animate">
+                            <h1>PHP WEB DEVELOPER</h1>
+                        </div>
+                        <p>
+                            I’m a PHP Developer with 1.5+ years of experience in full-stack web development. Skilled in
+                            PHP, Laravel, MySQL, JavaScript, jQuery, and Bootstrap, I’ve built scalable web
+                            applications, e-commerce platforms, ERP systems, and class booking portals. I specialize in
+                            API integration, payment gateways, admin dashboards, and responsive UI/UX. I focus on clean,
+                            maintainable code and performance-driven development to deliver efficient, user-friendly,
+                            and reliable solutions across various domains.
+                        </p>
+                        <!-- <a href="#about" class="btn-custom" onclick="showSection('about')">MORE ABOUT ME →</a> -->
+                        <button class="custom-main-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="arrow-icon-down">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                            </svg>
+                            <a href="shubham_kumar.pdf" download>
+                                <div class="custom-button-label">
+                                    Download Resume
+                                </div>
+                            </a>
+                        </button>
+                        <button class="custom-main-button call-main-button">
+
+                            <a href="tel:8882275881">
+                                <div class="custom-button-label">
+                                    Call Me
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="socical_media">
+                        <div class="home-sci">
+                            <a href="https://www.facebook.com/shubham12301"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://www.linkedin.com/in/shubhamkumar8102/"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/shubhamkumar7482"><i class='bx bxl-github'></i></a>
+                        </div>
+                        <div class="home-imgHover"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-design"></div>
+        </div>
+    </div>
+
+    <div class="sidebar background_added " style="display: none;">
+        <div class="icon" onclick="showSection('main')">
+            <img src="assets/images/icon/house-solid-full.svg" alt="Home Icon" width="24" height="24">
+            <span>Home</span>
+        </div>
+        <div class="icon" onclick="showSection('about')">
+            <img src="assets/images/icon/user-solid-full.svg" alt="aobut Icon" width="24" height="24">
+            <span>About</span>
+        </div>
+        <div class="icon" onclick="showSection('skills')">
+            <img src="assets/images/icon/laptop-code-solid-full.svg" alt="skills Icon" width="24" height="24">
+            <span>Skills</span>
+        </div>
+        <div class="icon" onclick="showSection('experience')">
+            <img src="assets/images/icon/briefcase-solid-full.svg" alt="Experience Icon" width="24" height="24">
+            <span>Experience</span>
+        </div>
+        <div class="icon" onclick="showSection('contact')">
+            <img src="assets/images/icon/envelope-solid-full.svg" alt="contact Icon" fill="white" width="24"
+                height="24">
+            <span>Contact</span>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about_header">About Me</div>
+
+        <div class="about-section">
+            <!-- Timeline Box -->
+            <div class="timeline-box">
+                <div class="timeline-step">
+                    <h5> Personal Introduction</h5>
+                    <small><b>Name : </b> Shubam kumar </small> <br>
+                    <small><b>Designation : </b> Full Stack Web Developer | PHP & Laravel Specialist</small><br>
+                    <small><b>Location : </b> Delhi, India</small>
+                </div>
+                <div class="timeline-step">
+                    <h5>Education</h5>
+                    <small><b>BCA </b>| Asian School Of Business (CCSU) , Noida - ( 2020-2023 )</small> <br>
+                    <small><b>XII ( BSEB ) </b>| Govt. Inter college, Katihar - ( 2018 - 2020 )</small><br>
+                    <small><b>X ( BSEB ) </b> | Utkarmit Madhyamik school, Katihar</small>
+                </div>
+                <div class="timeline-step">
+                    <h5>Experience</h5>
+                    <small>Software Engineer - PHP | Maxtra Technologies ,Noida - ( July 2025 – Nov 2025 )</small>
+                    <br>
+
+                    <small>PHP Developer | VR Digital Solutions ( Janak Puri, Delhi ) - (Oct.‘23 - Dec. ‘24) </small>
+                    <br>
+                    <small>Web Developer Intern | Webscruise Technology For Innovators, Noida - (Oct‘22 - Feb ‘23)
+                    </small>
+                </div>
+                <div class="timeline-step">
+                    <h5>SKILLS</h5>
+                    <small><b>Programming Language: </b> PHP, JavaScript, HTML5 , CSS3</small> <br>
+                    <small><b>Libraries/Frameworks: </b> Bootstrap, Laravel, jQuery</small> <br>
+                    <small><b>Tools/Platforms: </b> Visual Studio code, GitHub, Office, Figma</small> <br>
+                    <small><b>Database: </b> MySQL database</small><br>
+                    <small><b>Other: </b> API Integration, Payment Gateways (Razorpay, Instamojo), Responsive
+                        Design</small>
+                </div>
+            </div>
+
+            <!-- About Text Box -->
+            <div class="about-text">
+                <!-- Highlights with Counter -->
+                <div class="highlight-boxes">
+                    <div class="highlight">
+                        <div class="number_about">
+                            <div class="counter" data-target="2">0</div>
+                            <div class="counter_icon">+</div>
+                        </div>
+                        <h4>Experience</h4>
+                    </div>
+                    <div class="highlight">
+                        <div class="number_about">
+                            <div class="counter" data-target="20">0</div>
+                            <div class="counter_icon">+</div>
+                        </div>
+                        <h4>Projects</h4>
+                    </div>
+                    <div class="highlight">
+                        <div class="number_about">
+                            <div class="counter" data-target="15">0</div>
+                            <div class="counter_icon">+</div>
+                        </div>
+                        <h4>API Integration</h4>
+                    </div>
+                    <div class="highlight">
+                        <div class="number_about">
+                            <div class="counter" data-target="100">0</div>
+                            <div class="counter_icon">+</div>
+                        </div>
+                        <h4>Clean Code</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Counter Animation
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                counter.innerText = '0';
+                const updateCounter = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText;
+                    const increment = target / 100;
+
+                    if (current < target) {
+                        counter.innerText = `${Math.ceil(current + increment)}`;
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        </script>
+    </section>
+
+    <section id="skills" class="skills-modern-section">
+        <h2>My Skills</h2>
+        <div class="skills-modern-grid">
+            <div class="skill-glass-card" title="3+ years experience with server-side logic">
+                <div class="icon"><i class="fab fa-php"></i></div>
+                <p>PHP</p>
+            </div>
+            <div class="skill-glass-card" title="Advanced Laravel app development">
+                <div class="icon"><i class="fab fa-laravel"></i></div>
+                <p>Laravel</p>
+            </div>
+            <div class="skill-glass-card" title="JavaScript logic, DOM, fetch API">
+                <div class="icon"><i class="fab fa-js"></i></div>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-glass-card" title="jQuery selectors, AJAX, UI effects">
+                <div class="icon"><i class="fas fa-code"></i></div>
+                <p>jQuery</p>
+            </div>
+            <div class="skill-glass-card" title="Semantic HTML and structure">
+                <div class="icon"><i class="fab fa-html5"></i></div>
+                <p>HTML</p>
+            </div>
+            <div class="skill-glass-card" title="Responsive design and styling">
+                <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                <p>CSS</p>
+            </div>
+            <div class="skill-glass-card" title="UI components and grid system">
+                <div class="icon"><i class="fab fa-bootstrap"></i></div>
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill-glass-card" title="Microsoft Word, Excel, PowerPoint">
+                <div class="icon"><i class="fas fa-file-alt"></i></div>
+                <p>MS Office</p>
+            </div>
+            <div class="skill-glass-card" title="Microsoft Word, Excel, PowerPoint">
+                <div class="icon"><i class="fas fa-file-alt"></i></div>
+                <p>MySQLi</p>
+            </div>
+            <div class="skill-glass-card" title="Microsoft Word, Excel, PowerPoint">
+                <div class="icon"><i class="fas fa-file-alt"></i></div>
+                <p>Git Hub</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1>My Experience</h1>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="content">
+                    <h3>Software Engineer - PHP </h3>
+                    <span>July 2025 – Nov 2025 | Maxtra Technologies ,Noida </span>
+                    <p>
+                        Developed a complete MLM system with modules for User, Wallet, KYC, E-Shop, Offers, Withdrawal,
+                        Fund Requests, and Query Management.
+                        Focused on modular architecture, database optimization, and secure transaction handling
+                        Tech Stack: PHP, MySQLi, AJAX, JavaScript, Bootstrap, HTML, CSS.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="content">
+                    <h3>PHP Developer</h3>
+                    <span>Oct 2023 – May 2025 | VR Digital Solutions, Janak Puri, Delhi</span>
+                    <p>
+                        Worked on complex web projects using PHP and Laravel. Built secure, dynamic applications,
+                        integrated APIs,
+                        handled payment gateways (Razorpay, Instamojo), and developed admin dashboards for ERP and
+                        appraisal systems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="content">
+                    <h3>Web Developer Intern</h3>
+                    <span>Oct 2022 – Feb 2023 | Webscruise Technology For Innovators, Noida</span>
+                    <p>
+                        Developed static and dynamic websites using PHP, JavaScript, jQuery, HTML, CSS, and MySQL.
+                        Gained practical
+                        experience in e-commerce website development and custom backend functionality.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="modern-contact-section">
+        <h2>Get In Touch</h2>
+
+
+        <div class="modern-contact-wrapper">
+            <!-- Contact Info -->
+            <div class="contact-info-box">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> &nbsp;shubhamkumar24023@gmail.com</p>
+                <p><i class="fas fa-phone"></i> &nbsp;+91 9220839287</p>
+                <p><i class="fas fa-map-marker-alt"></i> &nbsp;New Mahavir Nagar, Delhi, 110018</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shk29" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shubhamkumar7482" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://shubhamkumar7482.github.io/My-Portfolio/" target="_blank"><i
+                            class="fas fa-globe"></i></a>
+                </div>
+            </div>
+
+
+
+            <!-- Contact Form -->
+            <div class="modern-contact-container">
+                <form class="modern-contact-form" onsubmit="submitContactForm(event)">
+                    <div class="input-group">
+                        <input type="text" name="name" required />
+                        <label>Your Name</label>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required />
+                        <label>Your Email</label>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="4" required></textarea>
+                        <label>Your Message</label>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
